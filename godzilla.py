@@ -2,7 +2,7 @@ import string
 from urllib import response
 import requests
 url = "https://modsec.rubiya.kr/chall/godzilla_799f2ae774c76c0bfd8429b8d5692918.php"
-cookies = {"PHPSESSID" : "mckb6uj8ldfsho123g0u5jkokp"}
+cookies = {"PHPSESSID" : "595dl7ejl1io50mt9bhg0dbmpk"}
 params = {"id" : None}
 
 for i in range(30):

